@@ -5,4 +5,4 @@
 4. Model database not yet implemented
 
 ##How to use
-1. run npm install inside directory
+1. run **npm install** inside directory
