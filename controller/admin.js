@@ -3,9 +3,12 @@ var router = express.Router();
 var http= require('http');
 var io = require('socket.io')(http);
 
-/* GET users listing. */
+var admin_model = require('../model/admin_model');
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  admin_model.showUser(function(result){
+  	res.send(result)
+  })
+
 });
 router.get('/login', function(req, res, next) {
   res.render('admin/login', { title: 'Express' });
