@@ -9,3 +9,8 @@ module.exports.listen = function(app){
     })
     return io
 }
+/* use io parameter with globalio*/
+module.exports.sendEvent = function(eventName,data,io){
+	io.emit(eventName,data);
+
+}
