@@ -16,6 +16,7 @@
     "serve-favicon": "~2.3.0",
     "mysql" : "~2.x.x",
     "socket.io" : "~1.x.x",
-    "moment" : "~2.x.x"
+    "moment" : "~2.x.x",
+    "express-session": "^1.7.6"
   }
 }
