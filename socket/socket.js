@@ -1,7 +1,7 @@
 var socketio = require('socket.io')
 module.exports.listen = function(server,app){
     io = socketio.listen(server)
-    io.use(require("express-socket.io-session")(app.settings.session));
+    io.use(require("express-socket.io-session")(app.settings.session,{autoSave:true}));
     console.log(app.settings.session)
     io.on('connection',function(socket) {
     	console.log('new connection')
