@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var http= require('http');
-var io = require('socket.io')(http);
+var io = require('../socket/socket.js')
 
 var admin_model = require('../model/admin_model');
 router.get('/', function(req, res, next) {
