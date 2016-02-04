@@ -19,7 +19,6 @@
     "moment": "~2.x.x",
     "morgan": "~1.6.1",
     "mysql": "~2.x.x",
-    "node-sass-middleware": "0.8.0",
     "serve-favicon": "~2.3.0",
     "socket.io": "~1.x.x"
   }
